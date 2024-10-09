@@ -1,5 +1,5 @@
 const cleanSet = (set, startString) => {
-  if (!startString) {
+  if (!startString || typeof startString !== 'string') {
     return '';
   }
 
