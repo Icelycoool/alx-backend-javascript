@@ -1,7 +1,5 @@
 const cleanSet = (set, startString) => {
-  if (!startString || typeof startString !== 'string') {
-    return '';
-  }
+  if (startString === '' || typeof startString !== 'string') return '';
 
   const result = [];
   set.forEach((value) => {
