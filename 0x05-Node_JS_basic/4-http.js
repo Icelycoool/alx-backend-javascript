@@ -2,13 +2,15 @@ const http = require('http');
 
 const PORT = 1245;
 const HOST = 'localhost';
+const app = http.createServer();
 
-const app = http.createServer((req, res) => {
+app.on('request', (req, res) => {
   const responseText = 'Hello ALX!';
   res.setHeader('Content-Type', 'text/plain');
   res.setHeader('Content-Length', responseText.length);
   res.statusCode = 200;
   res.write(Buffer.from(responseText));
+  res.end();
 });
 
 app.listen(PORT, HOST, () => {
