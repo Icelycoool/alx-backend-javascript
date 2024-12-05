@@ -57,7 +57,7 @@ const countStudents = (dataPath) => new Promise((resolve, reject) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello ALX!');
+  res.send('Hello Holberton School!');
 });
 
 app.get('/students', (req, res) => {
@@ -87,3 +87,5 @@ app.get('/students', (req, res) => {
 app.listen(PORT, HOST, () => {
   console.log(`Server listening at -> http://${HOST}:${PORT}`);
 });
+
+module.exports = app;
