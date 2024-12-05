@@ -60,7 +60,7 @@ const ROUTE_HANDLER = [
   {
     route: '/',
     handler(_, res) {
-      const responseText = 'Hello ALX!';
+      const responseText = 'Hello Holberton School!';
 
       res.setHeader('Content-Type', 'text/plain');
       res.setHeader('Content-Length', Buffer.byteLength(responseText));
