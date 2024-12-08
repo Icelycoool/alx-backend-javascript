@@ -12,10 +12,9 @@ function calculateNumber(type, a, b) {
             break;
         case 'DIVIDE':
             if (roundB === 0) {
-                throw new Error('Error');
-            } else {
-                result = roundA / roundB;
+                return 'Error';
             }
+            result = roundA / roundB;
             break;
         default:
             throw new Error(`Unsupported operation ${ type } please use 'SUM' | 'SUBTRACT' | 'DIVIDE' instead`);

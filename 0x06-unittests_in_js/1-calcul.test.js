@@ -16,6 +16,6 @@ describe('calculateNumber', () => {
     });
 
     it('should throw an error for division by zero', () => {
-        assert.throws(() => calculateNumber('DIVIDE', 10, 0), Error);
+        assert.strictEqual(calculateNumber('DIVIDE', 10, 0), 'Error');
     });
 })
