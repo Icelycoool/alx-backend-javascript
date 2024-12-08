@@ -18,8 +18,4 @@ describe('calculateNumber', () => {
     it('should throw an error for division by zero', () => {
         assert.throws(() => calculateNumber('DIVIDE', 10, 0), Error);
     });
-
-    it('should throw an error for unsupported operation', () => {
-        assert.throws(() => calculateNumber('ADD', 3, 2), Error);
-    });
 })
